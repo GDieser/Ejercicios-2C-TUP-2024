@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1727185705 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios memoria dinamica\ejercicio1\main.cpp
+	<iostream>
+	<ctime>
+	<iomanip>
+

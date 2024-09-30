@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1726512722 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\ejemplo 1\alamcen\producto.cpp
+	"Producto.h"
+	<cstring>
+
+1726512722 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\ejemplo 1\alamcen\producto.h
+	<string>
+

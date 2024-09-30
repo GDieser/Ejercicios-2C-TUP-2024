@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1727054979 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\holamundo\ciudad.cpp
+	"Ciudad.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+
+1619739899 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\holamundo\ciudad.h
+
+1727135988 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\holamundo\pais.cpp
+	"Pais.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+
+1727119861 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\holamundo\pais.h
+
+1727138453 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\holamundo\main.cpp
+	<iostream>
+	<cstring>
+	<string.h>
+	<iomanip>
+	"Pais.h"
+	"Ciudad.h"
+
