@@ -4,6 +4,7 @@
 #include "ArchivoAlumnos.h"
 #include "Fecha.h"
 #include "AlumnosTUP.h"
+#include "Alumno_Legajo.h"
 
 using namespace std;
 
@@ -12,6 +13,7 @@ using namespace std;
 ArchivoAlumnos::ArchivoAlumnos(const char *n)
 {
     setTamanioRegistro();
+
     strcpy(nombre, n);
 }
 int ArchivoAlumnos::getTamanioRegistro()
@@ -37,25 +39,59 @@ bool ArchivoAlumnos::grabarRegistroAlumno(Alumno reg)
     fclose(pAlumno);
 
     return escribio;
+}
+
+bool ArchivoAlumnos::grabarRegistroAlumno(Alumno reg, string nombreRegistro)
+{
+    FILE *pAlumno;
+
+    pAlumno=fopen(nombreRegistro.c_str(),"ab" );//si no puede hacer la apertura fopen devuelve NULL
+
+    if(pAlumno==NULL) return false;
+
+    int escribio=fwrite(&reg,sizeof(Alumno),1,pAlumno);
+
+    fclose(pAlumno);
+
+    return escribio;
+}
+
+bool ArchivoAlumnos::grabarRegistro(Alumno_Legajo reg, string nombreRegistro)
+{
+    FILE *pAlumno;
+
+    pAlumno=fopen(nombreRegistro.c_str(),"ab" );//si no puede hacer la apertura fopen devuelve NULL
+
+    if(pAlumno==NULL) return false;
+
+    int escribio=fwrite(&reg,sizeof(Alumno),1,pAlumno);
+
+    fclose(pAlumno);
+
+    return escribio;
 
 }
+
 
 bool ArchivoAlumnos::leerRegistroAlumno(Alumno &reg)
 {
     FILE *pAlumno;
+
     pAlumno=fopen(nombre,"rb" );//si no puede hacer la apertura fopen devuelve NULL
     if(pAlumno==NULL) return false;
+
     int leyo=fread(&reg,sizeof(Alumno),1,pAlumno);
+
     fclose(pAlumno);
+
     return leyo;
 }
 
 bool ArchivoAlumnos::listarRegistros()
 {
-    FILE *pAlu;
-
     Alumno reg;
 
+    FILE *pAlu;
     pAlu=fopen(nombre, "rb");
     if(pAlu==NULL)
     {
@@ -76,15 +112,17 @@ bool ArchivoAlumnos::listarRegistros()
 
 int ArchivoAlumnos::buscarRegistro(int leg)
 {
-    FILE *pAlu;
     Alumno reg;
     int pos=0;
+
+    FILE *pAlu;
     pAlu=fopen(nombre, "rb");
     if(pAlu==NULL)
     {
         cout<<"NO SE PUDO ABRIR EL ARCHIVO "<<endl;
         return -2;
     }
+
     while(fread(&reg,sizeof(Alumno),1,pAlu)==1)
     {
         if(reg.getLegajo()==leg)
@@ -94,34 +132,36 @@ int ArchivoAlumnos::buscarRegistro(int leg)
         }
         pos++;
     }
+
     fclose(pAlu);
+
     return -1;
 }
 
 Alumno ArchivoAlumnos::leerRegistro(int ubicacion)
 {
-    FILE *pAlu;
     Alumno reg;
     reg.setLegajo(-1);
-    ///int pos=0;
+
+    FILE *pAlu;
+
     pAlu=fopen(nombre, "rb");
     if(pAlu==NULL)
     {
         cout<<"NO SE PUDO ABRIR EL ARCHIVO "<<endl;
         return reg;
     }
-    /*while(fread(&reg,sizeof(Alumno),1,pAlu)==1){
-        if(pos==ubicacion){
-          fclose(pAlu);
-          return reg;
-        }
-        pos++;
-    }*/
+
     int cuanto=ubicacion*sizeof(Alumno);
+
     int desde_donde=0;
+
     fseek(pAlu,cuanto, desde_donde);
+
     fread(&reg, sizeof(Alumno),1, pAlu);
+
     fclose(pAlu);
+
     return reg;
 
 }
@@ -494,4 +534,116 @@ bool ArchivoAlumnos::listarAlumnosMayoresTreinta()
     fclose(pAlu);
 
     return true;
+}
+
+int ArchivoAlumnos::informarEdadPromedio()
+{
+    int tam = getCantidad();
+    Fecha fecha;
+    Alumno alu;
+
+    FILE *pFile;
+
+    pFile=fopen(nombre, "rb");
+    if(pFile == nullptr) return -1;
+
+    int edadActual;
+    int acuEdad = 0;
+
+    while(fread(&alu, sizeof(Alumno), 1, pFile) == 1)
+    {
+        edadActual = fecha.getAnio() - alu.getFechaNacimiento().getAnio();
+
+        if(fecha.getMes() < alu.getFechaNacimiento().getMes() || (fecha.getMes() == alu.getFechaNacimiento().getMes() && fecha.getDia() < fecha.getMes() < alu.getFechaNacimiento().getDia()))
+        {
+            edadActual--;
+        }
+        acuEdad += edadActual;
+    }
+
+    fclose(pFile);
+
+    int edad = acuEdad / tam;
+
+    return edad;
+}
+
+// Informar por cada mes la cantidad de alumnos de ingeniería mecánica (código de carrera 1) que cumplen años.
+void ArchivoAlumnos::listarCantidadAlumnosPorMes()
+{
+    int registros = getCantidad();
+    Alumno alu;
+
+    int vectMeses[12] = {};
+
+
+    for(int i=0; i<registros; i++)
+    {
+        alu = leerRegistro(i);
+
+        if(alu.getCodigoCarrera() == 1)
+        {
+            vectMeses[(alu.getFechaNacimiento().getMes())-1]++;
+        }
+    }
+
+    for(int i=0; i<12; i++)
+    {
+        if(vectMeses[i] > 0)
+        {
+            cout << "-----------------------------------"<< endl;
+            cout << "Mes #" << i+1 << " tiene: " << vectMeses[i] << " estudiante/s."<< endl;
+        }
+    }
+}
+
+//7) Generar un archivo con los alumnos que tengan legajos entre el 130 y el 140 (incluyendo los extremos). Cada registro debe tener el número de legajo,
+//el nombre y el apellido.
+
+void ArchivoAlumnos::generarArchivoAlumnosPorLegajo()
+{
+
+    int tam = getCantidad();
+    Alumno alumno;
+
+    int cont = 0;
+    for(int i=0; i<tam; i++)
+    {
+        alumno = leerRegistro(i);
+
+        if(alumno.getLegajo() <= 140 && alumno.getLegajo() >= 130)
+        {
+            Alumno_Legajo aluLegajo(alumno.getLegajo(), alumno.getNombre(), alumno.getApellido());
+
+            grabarRegistro(aluLegajo, "legajos_alumnos.dat");
+
+            aluLegajo.Mostrar();
+
+            cont++;
+        }
+    }
+
+}
+
+//8) Generar un archivo con los alumnos nacidos en el año 2001. El formato del registro debe ser igual al registro del archivo original de alumnos.
+
+void ArchivoAlumnos::generarArchivoNacidos2001()
+{
+    int registros = getCantidad();
+
+    Alumno alu;
+
+    for(int i=0; i<registros; i++)
+    {
+        alu = leerRegistro(i);
+
+        if(alu.getFechaNacimiento().getAnio() == 2001)
+        {
+            grabarRegistroAlumno(alu, "Alumnos_2001.dat");
+
+            cout << "-------------------" << endl;
+            alu.Mostrar();
+        }
+    }
+
 }

@@ -44,6 +44,7 @@ void mostrarMenu()
         cout << "6 - Generar registro Alumnos Tup" << endl;
         cout << "7 - Mostrar Alumnos TUP" << endl;
         cout << "8 - Mostrar Alumnos mayores a 30" << endl;
+        cout << "9 - Mostrar promedio de edad" << endl;
         cout << endl;
         cout << endl;
         cout << "0 - Salir." << endl;
@@ -108,6 +109,11 @@ void mostrarMenu()
             archiAlu.listarAlumnosMayoresTreinta();
             system("pause");
             break;
+        case 9:
+            cout << "Promedio de edad: " << endl;
+            cout << archiAlu.informarEdadPromedio() << endl;
+            system("pause");
+            break;
         case 0:
             cout << "ADIOS" << endl;
             break;
@@ -138,6 +144,9 @@ void mostrarSubMenu()
         cout << "3 - Carrera con menos alumnos." << endl;
         cout << "4 - Ordenar alfabeticamente los alumnos." << endl;
         cout << "5 - Generar archivo con orden alfabetico." << endl;
+        cout << "6 - Informar inscriptos en ing mecanica." << endl;
+        cout << "7 - Generar archivo con legajo de 130 a 140." << endl;
+        cout << "8 - Generar archivo alumnos 2001." << endl;
         cout << endl;
         cout << "0 - Volver al menu anterior." << endl;
         cin >> op;
@@ -185,8 +194,20 @@ void mostrarSubMenu()
             archiAlu.listarRegistrosOrdenado();
 
             system("pause");
-
             break;
+        case 6:
+            archiAlu.listarCantidadAlumnosPorMes();
+            system("pause");
+            break;
+        case 7:
+            archiAlu.generarArchivoAlumnosPorLegajo();
+            system("pause");
+            break;
+        case 8:
+            archiAlu.generarArchivoNacidos2001();
+            system("pause");
+            break;
+
         case 0:
             cout << "ADIOS" << endl;
             break;
@@ -196,6 +217,7 @@ void mostrarSubMenu()
     while(op != 0);
 
 }
+
 
 
 /*cout<<"INGRESE EL LEGAJO DEL ALUMNO QUE SE QUIERE BUSCAR ";

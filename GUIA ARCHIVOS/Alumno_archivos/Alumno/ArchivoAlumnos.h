@@ -1,6 +1,7 @@
 #pragma once
 #include "Alumno.h"
 #include "Fecha.h"
+#include "Alumno_Legajo.h"
 
 using namespace std;
 
@@ -20,6 +21,7 @@ public:
     void setTamanioRegistro();
 
     bool grabarRegistroAlumno(Alumno reg);
+    bool grabarRegistroAlumno(Alumno reg, string nombreRegistro);
 
     bool leerRegistroAlumno(Alumno &reg);
 
@@ -45,5 +47,13 @@ public:
     bool generarArchivoAlumnosTup();
     bool listarRegistroAlumosTup();
     bool listarAlumnosMayoresTreinta();
+
+    int informarEdadPromedio();
+    void listarCantidadAlumnosPorMes();
+
+    bool grabarRegistro(Alumno_Legajo reg, string nombreRegistro);
+    void generarArchivoAlumnosPorLegajo();
+
+    void generarArchivoNacidos2001();
 
 };

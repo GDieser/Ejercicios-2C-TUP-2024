@@ -14,6 +14,7 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="../Alumno" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -24,6 +25,7 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="../Alumno" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -42,7 +44,9 @@
 		<Unit filename="ArchivoAlumnos.h" />
 		<Unit filename="Fecha.cpp" />
 		<Unit filename="Fecha.h" />
+		<Unit filename="include/Alumno_Legajo.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Alumno_Legajo.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

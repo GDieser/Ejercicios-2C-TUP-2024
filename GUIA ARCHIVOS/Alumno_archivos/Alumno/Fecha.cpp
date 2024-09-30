@@ -1,11 +1,13 @@
 #include <iostream>
+#include <ctime>
+
 #include "Fecha.h"
 
 using namespace std;
 
 Fecha::Fecha()
 {
-    //CargarFecha();
+    establecerFechaPorDefecto();
 }
 
 Fecha::Fecha(int d=0, int m=0, int a=0)
@@ -67,11 +69,16 @@ void Fecha::Mostrar()
     cout<<_dia<<"/"<<_mes<<"/"<<_anio<<endl;
 }
 
-/*
-Fecha::Fecha(const int d,const int m,const int a)
-{
-    dia=d;
-    mes=m;
-    anio=a;
-}*/
-///fin de clase Fecha
+void Fecha::establecerFechaPorDefecto(){
+
+    time_t timestamp = time(0);
+
+    tm *diaactual = localtime(&timestamp);
+
+    _dia = diaactual->tm_mday;
+
+    _mes = diaactual->tm_mon+1;
+
+    _anio = diaactual->tm_year+1900;
+}
+

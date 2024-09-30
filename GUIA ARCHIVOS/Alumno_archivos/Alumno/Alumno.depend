@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1727638219 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\fecha.cpp
+1727702080 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\fecha.cpp
 	<iostream>
+	<ctime>
 	"Fecha.h"
 
-1727637385 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\fecha.h
+1727698616 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\fecha.h
 
 1727644110 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\alumno.cpp
 	<iostream>
@@ -14,18 +15,20 @@
 1727644097 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\alumno.h
 	"Fecha.h"
 
-1727656884 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\archivoalumnos.cpp
+1727709679 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\archivoalumnos.cpp
 	<iostream>
 	<cstring>
 	"ArchivoAlumnos.h"
 	"Fecha.h"
 	"AlumnosTUP.h"
+	"Alumno_Legajo.h"
 
-1727656160 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\archivoalumnos.h
+1727709552 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\archivoalumnos.h
 	"Alumno.h"
 	"Fecha.h"
+	"Alumno_Legajo.h"
 
-1727656187 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\main.cpp
+1727709690 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\main.cpp
 	<iostream>
 	<cstring>
 	"Fecha.h"
@@ -38,4 +41,11 @@
 	"AlumnosTUP.h"
 
 1727652058 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\alumnostup.h
+
+1727707120 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\include\alumno_legajo.h
+
+1727707149 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios archivos\alumno_archivos\alumno\src\alumno_legajo.cpp
+	<iostream>
+	<cstring>
+	"Alumno_Legajo.h"
 
