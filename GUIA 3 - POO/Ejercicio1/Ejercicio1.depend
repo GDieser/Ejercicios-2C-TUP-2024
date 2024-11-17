@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1725891567 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica get y set\ejercicio1\main.cpp
+	<iostream>
+	"Persona.h"
+
+1725891569 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica get y set\ejercicio1\persona.h
+
+1725891656 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica get y set\ejercicio1\persona.cpp
+	<iostream>
+	"Persona.h"
+

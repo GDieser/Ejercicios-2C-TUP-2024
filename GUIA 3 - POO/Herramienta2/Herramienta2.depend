@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1726022972 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\herramienta2\herramienta.cpp
+	<iostream>
+	<iostream>
+	"Herramienta.h"
+
+1726022972 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\herramienta2\herramienta.h
+
+1726022852 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\herramienta2\main.cpp
+	<iostream>
+	"Herramienta.h"
+	"Martillo.h"
+	"Destornillador.h"
+	"Taladro.h"
+	"TaladroPercutor.h"
+
+1726021742 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\herramienta2\martillo.h
+	"Herramienta.h"
+
+1726021627 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\herramienta2\martillo.cpp
+	"Martillo.h"
+	"Herramienta.h"
+	<iostream>
+	"Herramienta.h"
+	"Martillo.h"
+
+1726021651 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\herramienta2\destornillador.h
+	"Herramienta.h"
+
+1726021627 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\herramienta2\destornillador.cpp
+	<iostream>
+	"Destornillador.h"
+
+1726022841 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\herramienta2\taladro.h
+	"Herramienta.h"
+
+1726022221 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\herramienta2\taladro.cpp
+	<iostream>
+	"Taladro.h"
+
+1726022841 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\herramienta2\taladropercutor.cpp
+	<iostream>
+	"TaladroPercutor.h"
+
+1726022841 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\herramienta2\taladropercutor.h
+	"Taladro.h"
+

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1727309580 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejemplo1\main.cpp
+	<iostream>
+	"Triangulo.h"
+
+1727308566 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejemplo1\triangulo.h
+
+1727309662 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejemplo1\triangulo.cpp
+	<iostream>
+	"Triangulo.h"
+

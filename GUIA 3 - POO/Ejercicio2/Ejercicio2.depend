@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1725390788 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio2\main.cpp
+	<iostream>
+	<ctime>
+	"header.h"
+
+1725407025 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio2\header.h
+	<ctime>
+

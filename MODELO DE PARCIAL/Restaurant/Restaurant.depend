@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1726782853 source:c:\users\german utn\desktop\modelo examen\restaurant\archivoserviciomesa.cpp
+	"Fecha.h"
+	"ArchivoServicioMesa.h"
+
+1726783148 c:\users\german utn\desktop\modelo examen\restaurant\fecha.h
+	<string>
+
+1726783155 c:\users\german utn\desktop\modelo examen\restaurant\archivoserviciomesa.h
+	<string>
+	"ServicioMesa.h"
+
+1726783160 c:\users\german utn\desktop\modelo examen\restaurant\serviciomesa.h
+	"Fecha.h"
+
+1727389462 source:c:\users\german utn\desktop\modelo examen\restaurant\examen.cpp
+	<iostream>
+	"Examen.h"
+	"ServicioMesa.h"
+	"ArchivoServicioMesa.h"
+
+1727385932 c:\users\german utn\desktop\modelo examen\restaurant\examen.h
+
+1726782050 source:c:\users\german utn\desktop\modelo examen\restaurant\fecha.cpp
+	"Fecha.h"
+
+1727389462 source:c:\users\german utn\desktop\modelo examen\restaurant\main.cpp
+	"Examen.h"
+
+1727122543 source:c:\users\german utn\desktop\modelo examen\restaurant\serviciomesa.cpp
+	"ServicioMesa.h"
+

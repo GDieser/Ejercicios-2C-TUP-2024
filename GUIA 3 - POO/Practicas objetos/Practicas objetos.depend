@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1729771914 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\practicas objetos\main.cpp
+	<iostream>
+	"DetalleRutina.h"
+
+1729771888 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\practicas objetos\include\detallerutina.h
+
+1729772013 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\practicas objetos\src\detallerutina.cpp
+	<iostream>
+	"DetalleRutina.h"
+

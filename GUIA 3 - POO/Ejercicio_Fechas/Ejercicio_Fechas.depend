@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1726779378 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio_fechas\fecha.cpp
+	<iostream>
+	"Fecha.h"
+
+1726779066 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio_fechas\fecha.h
+	<string>
+
+1726779237 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio_fechas\main.cpp
+	<iostream>
+	<Fecha.h>
+

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1725832361 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio6\main.cpp
+	<iostream>
+	<cmath>
+	"Punto.h"
+
+1725800673 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio6\punto.h
+
+1725832693 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio6\punto.cpp
+	<iostream>
+	<cmath>
+	"Punto.h"
+

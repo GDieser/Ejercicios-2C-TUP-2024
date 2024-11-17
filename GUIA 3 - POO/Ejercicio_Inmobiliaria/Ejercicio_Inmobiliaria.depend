@@ -1,0 +1,81 @@
+# depslib dependency file v1.0
+1726853354 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\casa.cpp
+	<iostream>
+	"Duenio.h"
+	"Casa.h"
+
+1726853445 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\casa.h
+	"Duenio.h"
+	"Inmueble.h"
+
+1726868018 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\casa_quinta.cpp
+	<iostream>
+	"Casa_quinta.h"
+
+1726868018 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\casa_quinta.h
+	"Duenio.h"
+	"Inmueble.h"
+
+1726870453 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\duenio.cpp
+	<iostream>
+	<cstring>
+	"Duenio.h"
+
+1726852983 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\duenio.h
+	"Duenio.h"
+
+1726842449 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\inmueble.h
+
+1726870785 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\departamento.cpp
+	<iostream>
+	<cstring>
+	"Departamento.h"
+
+1726870553 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\departamento.h
+	"Duenio.h"
+	"Inmueble.h"
+
+1726845588 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\inmueble.cpp
+	<iostream>
+	<cstring>
+	"Inmueble.h"
+
+1726874019 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\local.cpp
+	<iostream>
+	"Local.h"
+
+1726874019 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\local.h
+	"Duenio.h"
+	"Inmueble.h"
+
+1726876897 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\main.cpp
+	<iostream>
+	<cstring>
+	"Duenio.h"
+	"Inmueble.h"
+	"Casa.h"
+	"Casa_quinta.h"
+	"Departamento.h"
+	"Local.h"
+	"Terreno.h"
+	"Funciones.h"
+
+1726874692 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\terreno.h
+	"Duenio.h"
+	"Inmueble.h"
+
+1726874779 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\terreno.cpp
+	<iostream>
+	"Terreno.h"
+
+1726876626 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\funciones.h
+	"Casa.h"
+	"Casa_quinta.h"
+	"Departamento.h"
+	"Local.h"
+	"Terreno.h"
+
+1726877297 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\ejercicio_inmobiliaria\funciones.cpp
+	<iostream>
+	"Funciones.h"
+

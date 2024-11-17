@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1725837485 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio7\usuario.cpp
+	<iostream>
+	"Usuario.h"
+
+1725837221 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio7\usuario.h
+
+1725837563 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio7\main.cpp
+	<iostream>
+	"Usuario.h"
+

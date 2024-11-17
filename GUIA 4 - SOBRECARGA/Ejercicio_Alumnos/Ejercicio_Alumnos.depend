@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1727578452 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica sobrecarga\ejercicio_alumnos\alumno.cpp
+	<iostream>
+	<cstring>
+	"Alumno.h"
+
+1727577592 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica sobrecarga\ejercicio_alumnos\alumno.h
+	"Fecha.h"
+
+1727578228 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica sobrecarga\ejercicio_alumnos\fecha.h
+
+1727578228 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica sobrecarga\ejercicio_alumnos\fecha.cpp
+	<iostream>
+	<cstring>
+	"Fecha.h"
+
+1727578341 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica sobrecarga\ejercicio_alumnos\archivoalumnos.cpp
+	<iostream>
+	<cstring>
+	"ArchivoAlumnos.h"
+	"Alumno.h"
+
+1727578341 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica sobrecarga\ejercicio_alumnos\archivoalumnos.h
+	"Alumno.h"
+
+1727578341 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica sobrecarga\ejercicio_alumnos\main.cpp
+	<iostream>
+	"Alumno.h"
+	"Fecha.h"
+	"ArchivoAlumnos.h"
+

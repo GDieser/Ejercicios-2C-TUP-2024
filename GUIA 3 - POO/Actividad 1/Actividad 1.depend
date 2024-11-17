@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1725577625 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\actividad 1\main.cpp
+	<iostream>
+	"Herramienta.h"
+	"Martillo.h"
+
+1725577738 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\actividad 1\herramienta.h
+	<string>
+
+1725577625 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\actividad 1\martillo.h
+	<string>
+	"Herramienta.h"
+
+1725577625 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\actividad 1\martillo.cpp
+	<iostream>
+	"Martillo.h"
+	"Herramienta.h"
+
+1725577707 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo herencias\actividad 1\src\herramienta.cpp
+	<iostream>
+	"Herramienta.h"
+

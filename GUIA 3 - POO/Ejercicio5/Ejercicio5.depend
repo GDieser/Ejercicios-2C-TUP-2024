@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1725750860 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio5\main.cpp
+	<iostream>
+	"Termometro.h"
+
+1725751218 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio5\termometro.h
+
+1725751319 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\ejercicios poo\ejercicio5\termometro.cpp
+	<iostream>
+	"Termometro.h"
+

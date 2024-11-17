@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1727573491 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica sobrecarga\ejerciciocadena\main.cpp
+	<iostream>
+	"Cadena.h"
+
+1727572786 c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica sobrecarga\ejerciciocadena\cadena.h
+
+1727573447 source:c:\users\utn\materias\segundo cuatrimestre\programacion ii\practicas\practica sobrecarga\ejerciciocadena\cadena.cpp
+	<iostream>
+	<cstring>
+	"Cadena.h"
+
